@@ -63,7 +63,7 @@ $dob="";
   mysqli_close($conn);
   if (isset($_post['View_Database'])) 
   {
-   header("Location:view_db.php");
+   header("Location:view.html");
    
  }
 ?>

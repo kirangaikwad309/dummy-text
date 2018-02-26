@@ -5,8 +5,7 @@ require_once 'conn.php';
 
 $myObj=array();
 
-// $name="";
-// $commitee_name="";
+
 $Name="";
 $Phone_No="";
 $Address="";
@@ -14,11 +13,6 @@ $city="";
 $Email="";
 $dob="";
 
- // $name_a=$_POST['name'];
- // $commitee_name=$_POST['commitee_name'];
- 
-  
-  
 $sql = "SELECT * FROM table1";
 
 $sql = "SELECT Name,Phone_No,Address,City,Email,DOB FROM textdemo";

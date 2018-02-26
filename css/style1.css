@@ -1,0 +1,71 @@
+
+      table {
+        border-radius: 0.5em;
+        border: 2px solid black;
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 80%;
+        margin: 180px;
+    }
+
+    td
+    {
+        border: 1px solid black;
+        text-align: center;
+        padding: 8px;
+        font-size:15px;
+    }
+    th{
+        border: 2px solid black;
+        font-size:18px;
+        padding:10px;
+    }
+
+        .material-icons,
+        .sortable span:before,
+        .sortable span:after {
+            font-family: 'Material Icons';
+            font-size: 18px;
+            font-feature-settings: "liga";
+            -webkit-font-feature-settings: 'liga';
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        .sortable span {
+            position: relative;
+        }
+        
+        .sortable span:before {
+            content: 'arrow_drop_down';
+            position: absolute;
+            right: -18px;
+            top: -2px;
+        }
+        
+        .sortable span:after {
+            content: 'arrow_drop_up';
+            position: absolute;
+            right: -18px;
+            top: -9px;
+        }
+        
+        .sortable.sort-ascent span:before {
+            display: none;
+        }
+        
+        .sortable.sort-ascent span:after {
+            top: -5px;
+            color:black;
+        }
+        
+        .sortable.sort-descent span:before {
+            top: -5px;
+            color:black;
+        }
+        
+        .sortable.sort-descent span:after {
+            display: none;
+        }
+        
+      
+        

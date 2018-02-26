@@ -2,10 +2,7 @@
 ob_start();
 session_start();
 require_once 'conn.php';
-
 $myObj=array();
-
-
 $Name="";
 $Phone_No="";
 $Address="";
@@ -18,7 +15,6 @@ $sql = "SELECT * FROM table1";
 $sql = "SELECT Name,Phone_No,Address,City,Email,DOB FROM textdemo";
  //$result = mysqli_query($conn, $sql);
  $result = $conn->query($sql);
-
 
 if ($result->num_rows > 0) {
     // output data of each row
@@ -34,18 +30,6 @@ if ($result->num_rows > 0) {
     echo "0 results";
 }
  
-  
-//   <?php
-//   $myJSON = '{ "$Name", "$Phone_No", "$Address","$city","$Email","$dob" }';
-  
-//   echo "myFunc(".$myJSON.");";
- 
- 
-  $conn->close();
-  ?>
-  
-
-    
-       
-
-        <?php ob_end_flush(); ?>
+ $conn->close();
+ ?>
+ <?php ob_end_flush(); ?>
